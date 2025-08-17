@@ -63,7 +63,7 @@
 
         mouse_scroll_up {
             bindings = <&msc SCRL_UP>;
-            key-positions = <22>;
+            key-positions = <37 35>;
             slow-release;
             layers = <2>;
         };
