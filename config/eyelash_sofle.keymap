@@ -106,11 +106,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &click_10  &trans          &trans          &trans           &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 3     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5   &trans          &trans          &trans           &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &click_10  &trans          &trans            &trans           &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &mkp MB1        &mmv MOVE_X(600)  &mkp MB2         &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mo 3     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5   &trans          &trans            &trans           &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans          &trans            &trans           &trans
             >;
 
             label = "Mouse";
@@ -118,11 +118,11 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &msc SCRL_UP    &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &msc MOVE_X(20)  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans           &trans           &trans
             >;
 
             label = "Scroll";
