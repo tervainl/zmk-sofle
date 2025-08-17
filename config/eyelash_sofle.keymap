@@ -120,8 +120,8 @@
         Mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans          &trans          &trans           &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans
             >;
