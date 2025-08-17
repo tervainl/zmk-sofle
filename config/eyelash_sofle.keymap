@@ -58,34 +58,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        mouse_scroll_up {
-            bindings = <&msc SCRL_UP>;
-            key-positions = <22 37>;
-            layers = <2>;
-            slow-release;
-        };
-
-        mouse_scroll_down {
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <37 35>;
-            layers = <2>;
-        };
-
-        mouse_scroll_right {
-            bindings = <&msc SCRL_RIGHT>;
-            key-positions = <37 36>;
-            layers = <2>;
-        };
-
-        mouse_scroll_left {
-            bindings = <&msc SCRL_LEFT>;
-            key-positions = <37 34>;
-            layers = <2>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -106,9 +79,9 @@
             bindings = <
 &trans                &kp F1             &kp F2      &kp F3            &kp F4      &kp F5       &trans  &kp F6  &kp F7    &kp F8    &kp F9       &kp F10          &kp F11
 &trans                &kp C_MUTE         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans       &trans  &trans  &trans    &kp UP    &trans       &trans           &kp F12
-&kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &trans      &mo 3             &mo 2       &trans       &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT    &kp PRINTSCREEN  &trans
+&kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP    &trans      &mo 4             &mo 2       &trans       &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT    &kp PRINTSCREEN  &trans
 &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &trans      &trans            &trans      &click_10    &trans  &trans  &trans    &kp HOME  &kp PAGE_UP  &kp INSERT       &trans
-&trans                &trans             &trans      &trans            &trans      &trans       &trans  &trans  &trans    &mo 4     &kp END      &kp PAGE_DOWN
+&trans                &trans             &trans      &trans            &trans      &trans       &trans  &trans  &trans    &mo 5     &kp END      &kp PAGE_DOWN
             >;
 
             display-name = "Function";
@@ -118,12 +91,24 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp F24         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mo 3           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans          &msc SCRL_UP    &msc SCRL_RIGHT  &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &msc SCRL_DOWN   &msc SCRL_LEFT
             >;
 
             label = "Mouse";
+        };
+
+        Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &msc SCRL_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans
+            >;
+
+            label = "Scroll";
         };
 
         Number {
