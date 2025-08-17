@@ -53,8 +53,8 @@
         click_10: click_10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK>;
-            label = "CLICK_10";
+            bindings = <&mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK &mkp LCLK>;
+            label = "CLICK_10"; 
         };
     };
 
