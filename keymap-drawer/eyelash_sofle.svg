@@ -1204,10 +1204,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:menu-right" xlink:href="#mdi:menu-right" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:menu-right"/>
 <use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-8" y="-24" height="15" width="15.0" class="key shifted glyph mdi:mouse"/>
 </g>
-<g transform="translate(840, 168)" class="key none keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(840, 168)" class="key keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">F24</text>
 </g>
 <g transform="translate(896, 168)" class="key trans keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -1341,10 +1341,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:pan-left" xlink:href="#mdi:pan-left" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:pan-left"/>
 </g>
 <g class="combo combopos-0">
-<path d="M784,154 l38,10" class="combo"/>
-<path d="M784,154 l-38,-10" class="combo"/>
-<rect rx="6" ry="6" x="770" y="141" width="28" height="26" class="combo"/>
-<use href="#mdi:pan-up" xlink:href="#mdi:pan-up" x="775" y="145" height="18" width="18.0" class="combo tap glyph mdi:pan-up"/>
+<path d="M784,126 l-41,-31" class="combo"/>
+<path d="M784,126 l41,31" class="combo"/>
+<rect rx="6" ry="6" x="770" y="113" width="28" height="26" class="combo"/>
+<use href="#mdi:pan-up" xlink:href="#mdi:pan-up" x="775" y="117" height="18" width="18.0" class="combo tap glyph mdi:pan-up"/>
 </g>
 <g class="combo combopos-1">
 <path d="M784,154 l38,10" class="combo"/>
