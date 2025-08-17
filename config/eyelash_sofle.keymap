@@ -58,6 +58,38 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        mouse_scroll_up {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <22 37>;
+            slow-release;
+            layers = <2>;
+        };
+
+        mouse_scroll_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <37 35>;
+            slow-release;
+            layers = <2>;
+        };
+
+        mouse_scroll_right {
+            bindings = <&msc SCRL_RIGHT>;
+            key-positions = <37 36>;
+            slow-release;
+            layers = <2>;
+        };
+
+        mouse_scroll_left {
+            bindings = <&msc SCRL_LEFT>;
+            key-positions = <37 34>;
+            slow-release;
+            layers = <2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -85,6 +117,18 @@
             display-name = "Function";
         };
 
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans          &trans          &trans           &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans
+            >;
+
+            label = "Mouse";
+        };
+
         Number {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans           &trans           &trans      &trans  &trans
@@ -97,24 +141,12 @@
             display-name = "Number";
         };
 
-        Mouse {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &mkp MB2        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB3         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans
-            >;
-
-            label = "Mouse";
-        };
-
         Setting {
             bindings = <
 &out OUT_TOG  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_TOG
 &trans        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &bl BL_TOG
 &trans        &trans         &trans         &trans         &trans         &trans           &trans  &trans           &trans           &trans           &trans           &trans           &trans
-&sys_reset    &bootloader    &trans         &trans         &trans         &bt BT_CLR       &trans  &trans           &trans           &trans           &trans           &bootloader      &sys_reset
+&sys_reset    &bootloader    &trans         &trans         &trans         &bt BT_CLR       &trans  &soft_off        &trans           &trans           &trans           &bootloader      &sys_reset
 &trans        &trans         &trans         &trans         &trans         &trans           &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
