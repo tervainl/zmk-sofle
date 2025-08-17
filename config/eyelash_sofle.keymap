@@ -63,8 +63,9 @@
 
         mouse_scroll_up {
             bindings = <&msc SCRL_UP>;
-            key-positions = <37 35>;
+            key-positions = <22 37>;
             layers = <2>;
+            slow-release;
         };
 
         mouse_scroll_down {
@@ -117,7 +118,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &trans           &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB3        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp F24         &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans          &msc SCRL_UP    &msc SCRL_RIGHT  &trans          &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans          &msc SCRL_DOWN   &msc SCRL_LEFT
             >;
