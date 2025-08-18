@@ -27,7 +27,7 @@
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &mmv { 
-    acceleration-exponent = <0>;
+    acceleration-exponent = <2>;
     time-to-max-speed-ms = <MOUSE_TIME_TO_MAX_SPEED>; };
 
 #define U_MOUSE_SCROLL_MAX 30
