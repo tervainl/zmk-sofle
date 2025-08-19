@@ -26,9 +26,10 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&mmv { 
+&mmv {
     acceleration-exponent = <2>;
-    time-to-max-speed-ms = <MOUSE_TIME_TO_MAX_SPEED>; };
+    time-to-max-speed-ms = <MOUSE_TIME_TO_MAX_SPEED>;
+};
 
 #define U_MOUSE_SCROLL_MAX 30
 
@@ -84,11 +85,11 @@
 
         Base {
             bindings = <
-&hm ESCAPE GRAVE  &kp N1          &kp N2          &kp N3              &kp N4            &kp N5        &none  &kp N6     &kp N7             &kp N8               &kp N9           &kp N0              &kp MINUS
-&kp TAB           &kp Q           &kp W           &kp E               &kp R             &kp T         &none  &kp Y      &kp U              &kp I                &kp O            &kp P               &kp EQUAL
-&trans            &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G         &none  &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMI  &kp APOS
-&trans            &kp Z           &kp X           &kp C               &kp V             &kp B         &none  &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp BACKSLASH
-&none             &trans          &mo 2           &mo 1               &kp SPACE         &kp DELETE    &none  &kp ENTER  &kp BACKSPACE      &trans               &kp LEFT_BRACE   &kp RIGHT_BRACE
+&hm ESCAPE GRAVE  &kp N1          &kp N2          &kp N3              &kp N4            &kp N5        &none  &kp N6     &kp N7             &kp N8               &kp N9            &kp N0              &kp MINUS
+&kp TAB           &kp Q           &kp W           &kp E               &kp R             &kp T         &none  &kp Y      &kp U              &kp I                &kp O             &kp P               &kp EQUAL
+&trans            &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G         &none  &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L   &hm RIGHT_GUI SEMI  &kp APOS
+&trans            &kp Z           &kp X           &kp C               &kp V             &kp B         &none  &kp N      &kp M              &kp COMMA            &kp DOT           &kp FSLH            &kp BACKSLASH
+&none             &trans          &mo 2           &mo 1               &kp SPACE         &kp DELETE    &none  &kp ENTER  &kp BACKSPACE      &trans               &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             display-name = "Base";
